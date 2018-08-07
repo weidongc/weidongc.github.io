@@ -239,7 +239,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/06/Hexo使用入门/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/07/pm2常用的命令用法介绍/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="weidongchuan">
@@ -258,7 +258,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/08/06/Hexo使用入门/" itemprop="url">Hexo使用入门</a></h1>
+                <a class="post-title-link" href="/2018/08/07/pm2常用的命令用法介绍/" itemprop="url">pm2进程管理器－常用命令</a></h1>
         
 
         <div class="post-meta">
@@ -270,8 +270,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-06T20:36:00+08:00">
-                2018-08-06
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-07T15:34:00+08:00">
+                2018-08-07
               </time>
             
 
@@ -288,7 +288,7 @@
 
           
           
-             <span id="/2018/08/06/Hexo使用入门/" class="leancloud_visitors" data-flag-title="Hexo使用入门">
+             <span id="/2018/08/07/pm2常用的命令用法介绍/" class="leancloud_visitors" data-flag-title="pm2进程管理器－常用命令">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -321,55 +321,15 @@
       
         
           
-            <p>Hexo博客搭建的基础大致流程为： </p>
-<ul>
-<li>安装Node.js →安装Git → 安装Hexo → 安装主题 → 本地测试运行 → 注册给github与coding并创建pages仓库 → 部署 </li>
-<li>Node.js和git的安装大家自己去网上搜下</li>
+            <h3 id="pm2"><a href="#pm2" class="headerlink" title="pm2"></a><a href="http://pm2.keymetrics.io/" target="_blank" rel="noopener">pm2</a></h3><ul>
+<li>Advanced, production process manager for Node.js</li>
 </ul>
-<h2 id="Hexo安装和配置"><a href="#Hexo安装和配置" class="headerlink" title="Hexo安装和配置"></a>Hexo安装和配置</h2><h4 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h4><p>在终端执行以下命令通过npm安装Hexo</p>
-<blockquote>
-<p>npm install -g hexo-cli </p>
-</blockquote>
-<h4 id="Hexo初始化"><a href="#Hexo初始化" class="headerlink" title="Hexo初始化"></a>Hexo初始化</h4><p>Hexo安装完成后,先提前建好一个文件夹用来做我们博客项目的文件夹。比如我这里在用户主目录下建了一个hexo文件夹，里面建了一个blog文件夹。</p>
-<p>在blog文件夹中打开终端，或者通关cd命令进入blog这个目录</p>
-<blockquote>
-<p>cd hexo/blog</p>
-</blockquote>
-<p><img src="/var/folders/nf/s6_9xjks6g995rgmzb7tfds00000gn/T/abnerworks.Typora/image-20180806195826685.png" alt="image-20180806195826685"></p>
-<p>执行命令：</p>
-<blockquote>
-<p>hexo init        # hexo会在当前文件夹建立网站所需要的所有文件</p>
-<p>npm install    # 安装依赖模块</p>
-</blockquote>
-<p>新建完成后，blog文件夹目录结构如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
-<p>启动hexo本地站点，并开启调试模式（即加上 –debug），整个命令是 <code>hexo s --debug</code>。 在服务启动的过程，注意观察命令行输出是否有任何异常信息，如果你碰到问题，这些信息将帮助他人更好的定位错误</p>
-<blockquote>
-<p>hexo s –debug        # 等同于hexo server，在本地服务器运行</p>
-</blockquote>
-<p><img src="/var/folders/nf/s6_9xjks6g995rgmzb7tfds00000gn/T/abnerworks.Typora/image-20180806195939784.png" alt="image-20180806195939784"></p>
-<p>然后打开浏览器输入<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000</a>。可以看到如下界面：</p>
-<p><img src="/var/folders/nf/s6_9xjks6g995rgmzb7tfds00000gn/T/abnerworks.Typora/image-20180806200032209.png" alt="image-20180806200032209"></p>
-<h2 id="Hexo-Next主题安装与配置"><a href="#Hexo-Next主题安装与配置" class="headerlink" title="Hexo Next主题安装与配置"></a><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">Hexo Next主题安装与配置</a></h2><p>在终端窗口下，定位到 Hexo 站点目录下。使用 Git checkout 代码：</p>
-<blockquote>
-<p>git clone <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a> themes/next</p>
-</blockquote>
-<p>编辑站点配置文件 _config.yml ，找到 theme 字段，并将其值更改为 next。</p>
-<blockquote>
-<p>theme: next    # 当前主题名称。值为false时禁用主题</p>
-</blockquote>
-<p>到此，NexT 主题安装完成。下一步我们将验证主题是否正确启用。在切换主题之后、验证之前， 我们最好使用 <code>hexo clean</code> 来清除 Hexo 的缓存。</p>
-<h3 id="主题设定"><a href="#主题设定" class="headerlink" title="主题设定"></a>主题设定</h3><hr>
-<h4 id="选择-Scheme"><a href="#选择-Scheme" class="headerlink" title="选择 Scheme"></a>选择 Scheme</h4><p>Scheme 是 NexT 提供的一种特性，借助于 Scheme，NexT 为你提供多种不同的外观。同时，几乎所有的配置都可以 在 Scheme 之间共用。目前 NexT 支持三种 Scheme，他们是：</p>
-<ul>
-<li>Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白</li>
-<li>Mist - Muse 的紧凑版本，整洁有序的单栏外观</li>
-<li>Pisces - 双栏 Scheme，小家碧玉似的清新</li>
-</ul>
-<p>Scheme 的切换通过更改 主题配置文件<code>themes/next/_config.yml</code>，搜索 scheme 关键字。 你会看到有三行 scheme 的配置，将你需用启用的 scheme 前面注释 # 去除即可。</p>
 <hr>
-<p>添加百度统计，添加阅读次数<br>同步到Github，域名解析</p>
-
+<hr>
+<p>pm2 是一个带有负载均衡功能的Node应用的进程管理器.当你要把你的独立代码利用全部的服务器上的所有CPU,并保证进程永远都活着,0秒的重载, PM2是完美的,下面我们来看pm2常用的命令用法介绍吧。</p>
+<p>PM2 （github上的源码）是开源的基于Nodejs的进程管理器，包括守护进程，监控，日志的一整套完整的功能，基本是Nodejs应用程序不二的守护进程选择，事实上它并不仅仅可以启动Nodejs的程序，只要是一般的脚本的程序它同样可以胜任。</p>
+<p>以下是pm2常用的命令行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">$ pm2 start app.js              # 启动app.js应用程序</span><br><span class="line">$ pm2 start app.js -i 4         # cluster mode 模式启动4个app.js的应用实例     # 4个应用程序会自动进行负载均衡</span><br><span class="line">$ pm2 start app.js --name=&quot;api&quot; # 启动应用程序并命名为 &quot;api&quot;</span><br><span class="line">$ pm2 start app.js --watch      # 当文件变化时自动重启应用</span><br><span class="line">$ pm2 start script.sh           # 启动 bash 脚本</span><br><span class="line"></span><br><span class="line">$ pm2 list                      # 列表 PM2 启动的所有的应用程序</span><br><span class="line">$ pm2 monit                     # 显示每个应用程序的CPU和内存占用情况</span><br><span class="line">$ pm2 show [app-name]           # 显示应用程序的所有信息</span><br><span class="line"></span><br><span class="line">$ pm2 logs                      # 显示所有应用程序的日志</span><br><span class="line">$ pm2 logs [app-name]           # 显示指定应用程序的日志</span><br><span class="line">$ pm2 flush</span><br><span class="line"></span><br><span class="line">$ pm2 stop all                  # 停止所有的应用程序</span><br><span class="line">$ pm2 stop 0                    # 停止 id为 0的指定应用程序</span><br><span class="line">$ pm2 restart all               # 重启所有应用</span><br><span class="line">$ pm2 reload all                # 重启 cluster mode下的所有应用</span><br><span class="line">$ pm2 gracefulReload all        # Graceful reload all apps in cluster mode</span><br><span class="line">$ pm2 delete all                # 关闭并删除所有应用</span><br><span class="line">$ pm2 delete 0                  # 删除指定应用 id 0</span><br><span class="line">$ pm2 scale api 10              # 把名字叫api的应用扩展到10个实例</span><br><span class="line">$ pm2 reset [app-name]          # 重置重启数量</span><br><span class="line"></span><br><span class="line">$ pm2 startup                   # 创建开机自启动命令</span><br><span class="line">$ pm2 save                      # 保存当前应用列表</span><br><span class="line">$ pm2 resurrect                 # 重新加载保存的应用列表</span><br><span class="line">$ pm2 update                    # Save processes, kill PM2 and restore processes</span><br><span class="line">$ pm2 generate                  # Generate a sample json configuration file</span><br><span class="line"></span><br><span class="line">$ pm2 deploy app.json prod setup    # Setup &quot;prod&quot; remote server</span><br><span class="line">$ pm2 deploy app.json prod          # Update &quot;prod&quot; remote server</span><br><span class="line">$ pm2 deploy app.json prod revert 2 # Revert &quot;prod&quot; remote server by 2</span><br><span class="line"></span><br><span class="line">$ pm2 module:generate [name]    # Generate sample module with name [name]</span><br><span class="line">$ pm2 install pm2-logrotate     # Install module (here a log rotation system)</span><br><span class="line">$ pm2 uninstall pm2-logrotate   # Uninstall module</span><br><span class="line">$ pm2 publish                   # Increment version, git push and npm publish</span><br></pre></td></tr></table></figure>
           
         
       
