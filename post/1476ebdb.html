@@ -92,7 +92,7 @@
 <meta property="og:image" content="http://yoursite.com/post/1476ebdb/3.png">
 <meta property="og:image" content="http://yoursite.com/post/1476ebdb/4.png">
 <meta property="og:image" content="http://yoursite.com/post/1476ebdb/5.png">
-<meta property="og:updated_time" content="2018-08-08T12:00:51.000Z">
+<meta property="og:updated_time" content="2018-08-08T17:36:15.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo使用入门">
 <meta name="twitter:description" content="Hexo博客搭建的基础大致流程为：   安装Node.js → 安装Hexo → 本地测试运行 → 安装及配置主题 →安装Git → 注册github与coding并创建pages仓库 → 部署  Node.js和git的安装大家自己去网上搜下，相关的文章很多">
@@ -355,7 +355,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2,757
+                  2,768
                 </span>
               
 
@@ -429,8 +429,7 @@
 <p>到这里hexo就算是安装好了，接下来就是一些详细的配置了。</p>
 <h4 id="常用命令总结"><a href="#常用命令总结" class="headerlink" title="常用命令总结"></a>常用命令总结</h4><figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo init [folder] # 初始化一个网站。如果没有设置 folder ，Hexo 默认在目前的文件夹建立网站</span><br><span class="line">hexo new [layout] &lt;title&gt; # 新建一篇文章。如果没有设置 layout 的话，默认使用 _config.yml 中的 default_layout 参数代替。如果标题包含空格的话，请使用引号括起来</span><br><span class="line">hexo version # 查看版本</span><br><span class="line">hexo clean # 清除缓存文件 (db.json) 和已生成的静态文件 (public)</span><br><span class="line">hexo g # 等于hexo generate # 生成静态文件</span><br><span class="line">hexo s # 等于hexo server # 本地预览</span><br><span class="line">hexo d # 等于hexo deploy # 部署，可与hexo g合并为 hexo d -g</span><br></pre></td></tr></table></figure>
 <hr>
-<h4 id="博文插入图片"><a href="#博文插入图片" class="headerlink" title="博文插入图片"></a>博文插入图片</h4><p>参考文章：<a href="https://www.jianshu.com/p/c2ba9533088a" target="_blank" rel="noopener">hexo博客图片问题</a></p>
-<p>1.首先确认站点配置文件_config.yml 中有 post_asset_folder:true。<br>Hexo 提供了一种更方便管理 Asset 的设定：post_asset_folder<br>当您设置post_asset_folder为true参数后，在建立文件时，Hexo<br>会自动建立一个与文章同名的文件夹，您可以把与该文章相关的所有资源都放到那个文件夹，如此一来，您便可以更方便的使用资源。<br><img src="/post/1476ebdb/4.png" alt=""></p>
+<h4 id="博文插入图片"><a href="#博文插入图片" class="headerlink" title="博文插入图片"></a>博文插入图片</h4><p>1.首先确认站点配置文件_config.yml 中有 post_asset_folder:true。<br>Hexo 提供了一种更方便管理 Asset 的设定：post_asset_folder<br>当您设置post_asset_folder为true参数后，在建立文件时，Hexo<br>会自动建立一个与文章同名的文件夹，您可以把与该文章相关的所有资源都放到那个文件夹，如此一来，您便可以更方便的使用资源。<br><img src="/post/1476ebdb/4.png" alt=""></p>
 <p>2.在hexo的目录下执行<code>npm install hexo-asset-image --save</code></p>
 <p>3.完成安装后用hexo新建文章的时候会发现_posts目录下面会多出一个和文章名字一样的文件夹。图片就可以放在文件夹下面。</p>
 <p>比如我这里新建一篇文章 执行：<code>hexo new &quot;Hexo使用入门&quot;</code> 就会在我的source/_posts目录下生成 <em>Hexo使用入门.md</em> 文件 和 <em>Hexo使用入门</em> 文件夹，将我们这篇文章要用到的图片放入该文件夹就行了</p>
@@ -442,7 +441,7 @@
 	{% asset_img 5.png %}
 
 </blockquote>
-<p><em>备注：本人还是推荐使用cdn的方式存图片，方便放在其他博客，还可以减少请求压力。<a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=cfiifl30" target="_blank" rel="noopener">阿里云oss</a>、七牛 等</em></p>
+<p><em>备注：这种方式本地直接打开文件显示不了突破，本人还是推荐使用cdn的方式存图片，方便放在其他博客，还可以减少请求压力。<b><a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=cfiifl30" target="_blank" rel="noopener">阿里云oss</a>、<a href="https://portal.qiniu.com/signup?code=3ll21h6a9q636" target="_blank" rel="noopener">七牛云</a></b> 等</em></p>
 <hr>
 <h2 id="Hexo-Next主题安装与配置"><a href="#Hexo-Next主题安装与配置" class="headerlink" title="Hexo Next主题安装与配置"></a><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">Hexo Next主题安装与配置</a></h2><p>在终端窗口下，定位到 Hexo 站点目录下。使用 Git checkout 代码：</p>
 <blockquote>
@@ -517,6 +516,7 @@
 <li><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">Hexo官网</a> 写得很详细</li>
 <li><a href="https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html" target="_blank" rel="noopener">打造个性超赞博客Hexo+NexT+GithubPages的超深度优化</a></li>
 <li><a href="http://www.cduyzh.com/hexo-settings-1/" target="_blank" rel="noopener">2017年最新基于hexo搭建个人免费博客——从零开始</a></li>
+<li><a href="https://cherryblog.site/tags/Hexo/" target="_blank" rel="noopener">Cherry’s Blog</a></li>
 <li><a href="https://blog.csdn.net/lewky_liu/article/details/81149069" target="_blank" rel="noopener">Hexo瞎折腾系列(1) - 准备工作与简单美化</a></li>
 <li><a href="https://blog.csdn.net/panchao888888/article/details/80666352#jump6" target="_blank" rel="noopener">Hexo博客NexT主题终极配置</a></li>
 <li><a href="http://www.cduyzh.com/img-oss/" target="_blank" rel="noopener">解决博客图片存储——阿里云的OSS运用</a></li>
