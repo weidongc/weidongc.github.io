@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://cqwdc.com/post/a7034c26.html</loc>
+    <lastmod>2018-08-14T08:22:47.000Z</lastmod>
+    <data>
+        <display>
+        <title>pm2进程管理器－常用命令</title>
+        <pubTime>2018-08-07T07:34:00.000Z</pubTime>
+        
+        <tag>Node</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://cqwdc.com/post/7ebafa90.html</loc>
     <lastmod>2018-08-11T18:27:21.000Z</lastmod>
     <data>
@@ -86,9 +103,9 @@
         <title>七牛云储存使用指南</title>
         <pubTime>2018-08-09T11:36:01.000Z</pubTime>
         
-        <tag>云储存</tag>
-         
         <tag>hexo</tag>
+         
+        <tag>云储存</tag>
          
          
            
@@ -123,23 +140,6 @@
         <pubTime>2015-08-08T00:08:08.000Z</pubTime>
         
         <tag>Linux</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://cqwdc.com/post/a7034c26.html</loc>
-    <lastmod>2018-08-08T03:38:14.000Z</lastmod>
-    <data>
-        <display>
-        <title>pm2进程管理器－常用命令</title>
-        <pubTime>2018-08-07T07:34:00.000Z</pubTime>
-        
-        <tag>Node</tag>
          
          
            
