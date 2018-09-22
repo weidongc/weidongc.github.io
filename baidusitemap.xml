@@ -4,27 +4,8 @@
 
     
   <url>
-    <loc>http://cqwdc.com/post/11f7215f.html</loc>
-    <lastmod>2018-08-24T15:52:51.000Z</lastmod>
-    <data>
-        <display>
-        <title>七牛云储存使用指南</title>
-        <pubTime>2018-08-09T11:36:01.000Z</pubTime>
-        
-        <tag>云储存</tag>
-         
-        <tag>hexo</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://cqwdc.com/post/7ebafa90.html</loc>
-    <lastmod>2018-08-24T14:50:49.000Z</lastmod>
+    <lastmod>2018-09-22T17:35:08.464Z</lastmod>
     <data>
         <display>
         <title>基于AWS EC2免费搭建ubuntu及ss全过程</title>
@@ -35,6 +16,25 @@
         <tag>ss</tag>
          
         <tag>科学上网</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cqwdc.com/post/11f7215f.html</loc>
+    <lastmod>2018-08-24T15:52:51.000Z</lastmod>
+    <data>
+        <display>
+        <title>七牛云储存使用指南</title>
+        <pubTime>2018-08-09T11:36:01.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>云储存</tag>
          
          
            
